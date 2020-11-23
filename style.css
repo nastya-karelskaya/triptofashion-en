@@ -1,0 +1,19 @@
+/*
+Theme Name:     Trip To Fashion
+Description:    Child theme for Hill
+Author:         Smartdatasoft Team
+Author URI:     http://www.smartdatasoft.com
+Template:       hill
+Version:        1.2
+*/
+
+@import url("../hill/style.css");
+
+/***** LOGO ***/
+a.custom-logo-link img {
+	max-height: 50px;
+    width: auto;
+    margin-top: 12px;
+    margin-left: 10px;
+	margin-right: 30px;
+}
