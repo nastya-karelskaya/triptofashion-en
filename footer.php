@@ -162,5 +162,22 @@ $hill_option = hill_get_all_options();
 <?php wp_footer(); ?>
 
 </footer>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+<script>
+jQuery('.main-page__slider').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+</script>
+
 </body>
 </html>

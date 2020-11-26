@@ -18,6 +18,9 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
   <?php wp_head(); ?>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -25,14 +28,19 @@
 
 <?php
 
-$hill_header_type = hill_get_option('hill_header_type');
-$header_type = !empty($hill_header_type)  ? $hill_header_type : 'one' ;
-get_template_part( 'template-parts/header', $header_type );
-?>
 
-<?php
-$hill_revslider = get_post_meta(get_the_ID(),'framework_revslider',true);
+// $hill_header_type = hill_get_option('hill_header_type');
+// $header_type = !empty($hill_header_type)  ? $hill_header_type : 'one' ;
+// get_template_part( 'template-parts/header', $header_type );
 
-if (!empty($hill_revslider) && function_exists('putRevSlider') && $hill_revslider !== "0") {
-  putRevSlider($hill_revslider);
-}
+// $hill_revslider = get_post_meta(get_the_ID(),'framework_revslider',true);
+
+// if (!empty($hill_revslider) && function_exists('putRevSlider') && $hill_revslider !== "0") {
+//   putRevSlider($hill_revslider);
+// }
+
+
+	
+
+get_template_part( 'template-parts/header', 'custom' );
+
